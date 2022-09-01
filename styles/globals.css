@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    margin: 0;
+    padding: 0;
+}
+.gradient{
+    background: red;
+    background: linear-gradient(to left, white 50%, black 50%) left;
+    background-size: 200%;
+    transition: all 0.3s ease;
+}
+.gradient:hover{
+    color: black;
+    background-position: right;
+}
+h1{
+    font-size: 30px;
+}
