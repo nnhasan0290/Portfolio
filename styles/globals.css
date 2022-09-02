@@ -1,20 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
-.gradient{
-    background: red;
-    background: linear-gradient(to left, white 50%, black 50%) left;
-    background-size: 200%;
-    transition: all 0.3s ease;
+.gradient {
+  background: red;
+  background: linear-gradient(to left, white 50%, black 50%) left;
+  background-size: 200%;
+  transition: all 0.3s ease;
 }
-.gradient:hover{
-    color: black;
-    background-position: right;
+.gradient:hover {
+  color: black;
+  background-position: right;
 }
-h1{
-    font-size: 30px;
+h1 {
+  font-size: 30px;
+}
+@layer components{
+    .icon-text {
+      @apply absolute font-semibold bg-[#2b2a2a] py-3 pr-[30px] pl-10 rounded-full z-[-1] right-0 group-hover:right-[50%] transition-all group-hover:rounded-l-full group-hover:rounded-r-none duration-300 opacity-0 group-hover:opacity-100 group-hover:bg-white group-hover:text-black;
+    }
+}
+.icons-parent-list{
+    @apply text-white bg-[#2b2a2a]  rounded-full p-3 flex items-center justify-center m-4 relative transition-all duration-300  hover:bg-white hover:text-black;
 }
