@@ -26,3 +26,9 @@ h1 {
 .icons-parent-list{
     @apply text-white bg-[#2b2a2a]  rounded-full p-3 flex items-center justify-center m-4 relative transition-all duration-300  hover:bg-white hover:text-black;
 }
+.second-big-head{
+  @apply sm:text-[40px] text-[20px] uppercase relative font-bold text-center
+}
+.third-big-head{
+  @apply sm:text-[30px] text-[15px] uppercase relative font-bold text-center my-5
+}
