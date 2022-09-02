@@ -1,5 +1,5 @@
 import {
-    Home, HomeRepairService, Mail, Person
+  Home, HomeRepairService, Mail, Person,
 } from '@mui/icons-material';
 import Link from 'next/link';
 import React from 'react';
@@ -17,7 +17,6 @@ function Heading() {
             <Person />
             <span className="icon-text">ABOUT ME</span>
           </li>
-
         </Link>
         <li className="icons-parent-list group">
           <HomeRepairService />
