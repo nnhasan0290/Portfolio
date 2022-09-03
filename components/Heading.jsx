@@ -8,8 +8,8 @@ import React from 'react';
 function Heading() {
   const router = useRouter();
   return (
-    <div className="text-white bg-[#111] fixed z-[1] right-[30px] transform top-[50%] translate-y-[-50%]">
-      <ul className="flex flex-col">
+    <div className="text-white md:bg-[#111] fixed z-[1] md:right-[30px] transform md:top-[50%] md:translate-y-[-50%] bottom-0 w-screen md:w-auto overflow-visible  bg-[#111]/70 backdrop-filter backdrop-blur-md backdrop-saturate-50">
+      <ul className="flex flex-row justify-around md:flex-col">
         <Link href="/">
           <li className={`icons-parent-list group ${router.pathname === '/' ? 'active-menu' : ''}`}>
             <Home />
@@ -28,7 +28,7 @@ function Heading() {
             <span className="icon-text">PORTFOLIO</span>
           </li>
         </Link>
-        <li className="text-white bg-[#2b2a2a]  rounded-full p-3 flex items-center justify-center m-4 whitespace-nowrap icons-parent-list group">
+        <li className="text-white bg-[#2b2a2a]  rounded-full p-3 flex items-center justify-center md:m-4 m-1 whitespace-nowrap icons-parent-list group">
           <Mail />
           <span className="icon-text">CONTACT ME</span>
         </li>

@@ -10,7 +10,7 @@ function HomePage() {
       </div>
       <div className="flex justify-center items-center basis-2/3">
         <div className="lg:mx-[130px] text-center lg:text-start">
-          <h1 className="second-big-head after:content-[''] after:w-[35px] after:lg:h-[3px] after:bg-white after:absolute after:left-[-40px] after:top-[26px] after:rounded-md lg:ml-10 ">
+          <h1 className="second-big-head after:content-[''] after:w-[35px] after:lg:h-[3px] after:bg-white after:absolute after:left-[-40px] after:top-[26px] after:rounded-md lg:ml-10 lg:text-start">
             I&apos;m Nazmul Hasan.
             {' '}
             <br />
@@ -18,7 +18,7 @@ function HomePage() {
             Frontend Developer
             {' '}
           </h1>
-          <p className="py-5 tracking-wider leading-8 lg:px-5 px-[70px] md:py-10">
+          <p className="py-5 tracking-wider leading-8 lg:px-5 px-[20px] md:py-10">
             I&apos;m a Tunisian based web designer & front‑end developer focused on crafting
             clean & user‑friendly experiences, I am passionate about building
             excellent software that improves the lives of those around me.
