@@ -28,7 +28,7 @@ function Heading() {
             <span className="icon-text">PORTFOLIO</span>
           </li>
         </Link>
-        <li className="text-white bg-[#2b2a2a]  rounded-full p-3 flex items-center justify-center md:m-4 m-1 whitespace-nowrap icons-parent-list group">
+        <li className={` icons-parent-list whitespace-nowrap group ${router.pathname === '/portfolio' ? 'active-menu' : ''}`}>
           <Mail />
           <span className="icon-text">CONTACT ME</span>
         </li>

@@ -1,3 +1,4 @@
+import { Download } from '@mui/icons-material';
 import React from 'react';
 import BigHead from './BigHead';
 import CircularProgress from './CircularProgressBar';
@@ -58,7 +59,7 @@ function AboutMe() {
               <strong>nazmulhasan0290@gmail.com</strong>
             </p>
           </div>
-          <GradientBtn />
+          <GradientBtn text="Download CV" icon={<Download />} />
         </div>
         <div className="p-3 min-w-[250px]">
           <h1 className="font-bold">Education </h1>
