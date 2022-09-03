@@ -7,7 +7,7 @@ body {
 }
 .gradient {
   background: red;
-  background: linear-gradient(to left, white 50%, black 50%) left;
+  background: linear-gradient(to right, black 49%, white 50%) left;
   background-size: 200%;
   transition: all 0.3s ease;
 }
@@ -24,11 +24,14 @@ h1 {
     }
 }
 .icons-parent-list{
-    @apply text-white bg-[#2b2a2a]  rounded-full p-3 flex items-center justify-center m-4 relative transition-all duration-300  hover:bg-white hover:text-black;
+    @apply text-white bg-[#2b2a2a]  rounded-full p-3 flex items-center justify-center m-4 relative transition-all duration-300  hover:bg-white hover:text-black cursor-pointer;
 }
 .second-big-head{
   @apply sm:text-[40px] text-[20px] uppercase relative font-bold text-center
 }
 .third-big-head{
   @apply sm:text-[30px] text-[15px] uppercase relative font-bold text-center my-5
+}
+.active-menu{
+  @apply bg-white text-black
 }

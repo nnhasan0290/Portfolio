@@ -23,7 +23,7 @@ function HomePage() {
             clean & user‑friendly experiences, I am passionate about building
             excellent software that improves the lives of those around me.
           </p>
-          <button type="submit" className="gradient relative py-3 pr-[60px] pl-10 capitalize rounded-full border font-semibold hidden lg:block ">
+          <button type="submit" className="gradient relative py-3 pr-[60px] pl-10 capitalize rounded-full border font-semibold hidden lg:block box-border">
             about me
             {' '}
             <span className="flex absolute top-0 right-0 justify-center items-center px-3 h-full text-black bg-white rounded-full"><ArrowForward /></span>
