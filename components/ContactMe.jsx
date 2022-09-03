@@ -1,17 +1,30 @@
 import {
-    FacebookRounded, GitHub, Instagram, LinkedIn, Mail, Phone, Send, Twitter
+  FacebookRounded, GitHub, Instagram, LinkedIn, Mail, Phone, Send, Twitter
 } from '@mui/icons-material';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import BigHead from './BigHead';
 import GradientBtn from './GradientBtn';
 
 export default function ContactMe() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const submitHandle = (e) => {
+    e.preventDefault();
+    alert('Message has been sent successfully');
+    setName('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+  };
   return (
     <main className=" sm:px-[100px] sm:py-10 bg-[#111111] text-white box-border min-h-screen ">
       <BigHead main="GET IN TOUCH" background="CONTACT" />
       <div className="flex flex-col justify-center lg:flex-row">
-        <div className="min-w-[200px] lg:max-w-[400px] p-2 border my-2">
+        <div className="min-w-[200px] lg:max-w-[400px] p-2  my-2">
           <div className="">
             <h1 className="font-semibold">Feel Free To Knock</h1>
             <p className="my-5 opacity-80">
@@ -53,25 +66,25 @@ export default function ContactMe() {
 
           </div>
         </div>
-        <div className="min-w-[250px] border py-2 flex flex-col lg:px-10  my-2">
+        <form onSubmit={submitHandle} className="min-w-[250px]  py-2 flex flex-col lg:px-10  my-2 w-full">
           <div className="flex flex-wrap">
             <div className="flex p-2 w-full md:basis-1/2">
-              <input className=" bg-[#615f5f22] p-3 rounded-full w-full" type="text" name="name" id="name" placeholder="Your Name" />
+              <input onChange={(e) => setName(e.target.value)} value={name} className=" bg-[#615f5f22] p-3 rounded-full w-full" type="text" name="name" id="name" placeholder="Your Name" required />
             </div>
             <div className="p-2 w-full md:basis-1/2">
-              <input className="w-full bg-[#615f5f22] p-3 rounded-full " type="email" name="email" id="email" placeholder="Your Email" />
+              <input value={email} onChange={(e) => setEmail(e.target.value)} className="w-full bg-[#615f5f22] p-3 rounded-full " type="email" name="email" id="email" placeholder="Your Email" required />
             </div>
           </div>
           <div className="p-2">
-            <input className="w-full bg-[#615f5f22] p-3 rounded-full" type="text" name="subject" id="subject" placeholder="Your Subject" />
+            <input value={subject} onChange={(e) => setSubject(e.target.value)} className="w-full bg-[#615f5f22] p-3 rounded-full" type="text" name="subject" id="subject" placeholder="Your Subject" required />
           </div>
           <div className="p-2 w-full">
-            <textarea className="outline-none bg-[#615f5f22] p-3 rounded-md w-full" name="message" id="message" cols="30" rows="8" placeholder="Your Message" />
+            <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="outline-none bg-[#615f5f22] p-3 rounded-md w-full" name="message" id="message" cols="30" rows="8" placeholder="Your Message" required />
           </div>
           <div>
-            <GradientBtn text="Send Message" icon={<Send />} />
+            <GradientBtn type="submit" text="Send Message" icon={<Send />} />
           </div>
-        </div>
+        </form>
       </div>
     </main>
   );

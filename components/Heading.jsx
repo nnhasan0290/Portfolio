@@ -28,10 +28,12 @@ function Heading() {
             <span className="icon-text">PORTFOLIO</span>
           </li>
         </Link>
-        <li className={` icons-parent-list whitespace-nowrap group ${router.pathname === '/portfolio' ? 'active-menu' : ''}`}>
-          <Mail />
-          <span className="icon-text">CONTACT ME</span>
-        </li>
+        <Link href="/contact">
+          <li className={` icons-parent-list whitespace-nowrap group uppercase ${router.pathname === '/contact' ? 'active-menu' : ''}`}>
+            <Mail />
+            <span className="icon-text">CONTACT ME</span>
+          </li>
+        </Link>
       </ul>
     </div>
   );

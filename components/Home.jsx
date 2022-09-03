@@ -1,8 +1,10 @@
 import { ArrowForward } from '@mui/icons-material';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 function HomePage() {
+  const router = useRouter();
   return (
     <main className="lg:flex sm:p-10 bg-[#111111] text-white box-border min-h-screen">
       <div className="flex justify-center items-center px-10 py-2 sm:w-full w-[250px] basis-1/3 m-auto">
@@ -23,8 +25,8 @@ function HomePage() {
             clean & user‑friendly experiences, I am passionate about building
             excellent software that improves the lives of those around me.
           </p>
-          <button type="submit" className="gradient relative py-3 pr-[60px] pl-10 capitalize rounded-full border font-semibold hidden lg:block box-border">
-            about me
+          <button onClick={() => router.push('/aboutme')} type="submit" className="gradient relative py-3 pr-[60px] pl-10  rounded-full border font-semibold hidden lg:block uppercase box-border">
+            more about me
             {' '}
             <span className="flex absolute top-0 right-0 justify-center items-center px-3 h-full text-black bg-white rounded-full"><ArrowForward /></span>
           </button>

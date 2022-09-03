@@ -9,7 +9,7 @@ function AboutMe() {
     <main className=" sm:p-10 bg-[#111111] text-white box-border min-h-screen ">
       <BigHead main="ABOUT ME" background="RESUME" />
       <section className="flex flex-wrap justify-around">
-        <div className="w-[50%] p-3 min-w-[250px]">
+        <div className="w-[50%] p-3 min-w-[260px]">
           <h1 className="font-bold">Personal Info</h1>
           <div className="flex flex-wrap items-center my-5">
             <p className="w-[50%] opacity-80 min-w-[200px]">
@@ -59,7 +59,9 @@ function AboutMe() {
               <strong>nazmulhasan0290@gmail.com</strong>
             </p>
           </div>
-          <GradientBtn text="Download CV" icon={<Download />} />
+          <div>
+            <GradientBtn text="Download CV" icon={<Download />} />
+          </div>
         </div>
         <div className="p-3 min-w-[250px]">
           <h1 className="font-bold">Education </h1>
