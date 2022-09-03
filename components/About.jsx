@@ -6,7 +6,7 @@ import GradientBtn from './GradientBtn';
 function AboutMe() {
   return (
     <main className=" sm:p-10 bg-[#111111] text-white box-border min-h-screen ">
-      <BigHead />
+      <BigHead main="ABOUT ME" background="RESUME" />
       <section className="flex flex-wrap justify-around">
         <div className="w-[50%] p-3 min-w-[250px]">
           <h1 className="font-bold">Personal Info</h1>
