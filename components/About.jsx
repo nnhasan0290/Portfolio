@@ -60,7 +60,9 @@ function AboutMe() {
             </p>
           </div>
           <div>
-            <GradientBtn text="Download CV" icon={<Download />} />
+            <a href="api/hello">
+              <GradientBtn text="Download CV" icon={<Download />} />
+            </a>
           </div>
         </div>
         <div className="p-3 min-w-[250px]">
@@ -88,7 +90,7 @@ function AboutMe() {
         </div>
       </section>
       <hr className="w-[40%] my-10 border-t-[#615f5f22] mx-auto" />
-      <section className="">
+      <section className="pb-10">
         <h1 className="py-5 text-center">
           MY SKILLS
         </h1>
@@ -96,7 +98,7 @@ function AboutMe() {
           <CircularProgress value={80} text="HTML" />
           <CircularProgress value={90} text="CSS" />
           <CircularProgress value={85} text="TAILWIND" />
-          <CircularProgress value={95} text="JAVSCRIPT" />
+          <CircularProgress value={95} text="JAVASCRIPT" />
           <CircularProgress value={60} text="TYPESCRIPT" />
           <CircularProgress value={95} text="REACT JS" />
           <CircularProgress value={95} text="NEXT JS" />
