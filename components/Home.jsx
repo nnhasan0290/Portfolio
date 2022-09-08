@@ -21,7 +21,7 @@ function HomePage() {
             {' '}
           </h1>
           <p className="py-5 tracking-wider leading-8 lg:px-5 px-[20px] md:py-10">
-            I&apos;m a Tunisian based web designer & front‑end developer focused on crafting
+            I&apos;m a front‑end developer focused on crafting
             clean & user‑friendly experiences, I am passionate about building
             excellent software that improves the lives of those around me.
           </p>
