@@ -16,7 +16,7 @@ export default function Portfolio() {
   };
   const cmsblog = {
     name: 'Simple Blog',
-    tech: 'Next js, Graph CMS',
+    tech: 'Next js, Graph CMS, Graph QL',
   };
 
   return (
