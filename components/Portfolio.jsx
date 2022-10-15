@@ -2,6 +2,7 @@ import React from 'react';
 import graphcms from '../public/graphcms.jpg';
 import secondImg from '../public/Screenshot_2.jpg';
 import thirdImg from '../public/Screenshot_3.jpg';
+import tictac from "../public/tic.png";
 import BigHead from './BigHead';
 import SinglePortfolio from './SinglePortfolio';
 
@@ -18,6 +19,10 @@ export default function Portfolio() {
     name: 'Simple Blog',
     tech: 'Next js, Graph CMS, Graph QL',
   };
+  const tictactoe = {
+    name: 'TIC TAC TOE',
+    tech: 'Vanilla JavaScript, Vanilla Css',
+  };
 
   return (
     <main className=" sm:p-10 bg-[#111111] text-white box-border min-h-screen pb-10 ">
@@ -26,6 +31,7 @@ export default function Portfolio() {
         <SinglePortfolio img={secondImg} details={shopgrid} link="https://nxt-shop.vercel.app/product" />
         <SinglePortfolio img={thirdImg} details={dashboard} link="https://nxt-shop.vercel.app/admin/dashboard" />
         <SinglePortfolio img={graphcms} details={cmsblog} link="https://cms-blog-six-opal.vercel.app" />
+        <SinglePortfolio img={tictac} details={tictactoe} link="https://tic-tac-toe-pearl-mu.vercel.app" />
       </div>
     </main>
   );
