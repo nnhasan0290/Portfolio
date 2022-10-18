@@ -17,7 +17,7 @@ function HomePage() {
             {' '}
             <br />
             {' '}
-            Frontend Developer
+            Mern Stack Developer
             {' '}
           </h1>
           <p className="py-5 tracking-wider leading-8 lg:px-5 px-[20px] md:py-10">
