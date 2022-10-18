@@ -11,8 +11,8 @@ const handler = async (req, res) => {
   const response = await fetch(url); // replace this with your API call & options
   if (!response.ok) throw new Error(`unexpected response ${response.statusText}`);
 
-  res.setHeader('Content-Type', 'application/webp');
-  res.setHeader('Content-Disposition', 'attachment; filename=nazmul.webp');
+  res.setHeader('Content-Type', 'application/pdf');
+  res.setHeader('Content-Disposition', 'attachment; filename=nazmul.pdf');
   await pipeline(response.body, res);
 };
 
