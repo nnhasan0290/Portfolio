@@ -5,7 +5,7 @@ import stream from 'stream';
 import { promisify } from 'util';
 
 const pipeline = promisify(stream.pipeline);
-const url = 'https://res.cloudinary.com/do7mb5ocb/image/upload/v1662287768/avatars/cv_emwmw7.webp';
+const url = 'http://www.keepandshare.com/doc10/view.php?id=35987&da=y';
 
 const handler = async (req, res) => {
   const response = await fetch(url); // replace this with your API call & options
