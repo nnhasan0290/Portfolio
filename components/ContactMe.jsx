@@ -1,10 +1,13 @@
 import {
   FacebookRounded, GitHub, Instagram, LinkedIn, Mail, Phone, Send, Twitter
 } from '@mui/icons-material';
+import { addDoc, collection } from "firebase/firestore";
 import Link from 'next/link';
 import React, { useState } from 'react';
+import db from '../firebase';
 import BigHead from './BigHead';
 import GradientBtn from './GradientBtn';
+
 
 export default function ContactMe() {
   const [name, setName] = useState('');
@@ -12,13 +15,29 @@ export default function ContactMe() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
-  const submitHandle = (e) => {
+  
+
+  const submitHandle = async(e) => {
     e.preventDefault();
-    alert('Message has been sent successfully');
-    setName('');
-    setEmail('');
-    setSubject('');
-    setMessage('');
+    try {
+      const docRef = await addDoc(collection(db, "messages"), {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+      });
+      console.log("Document written with ID: ", docRef.id);
+      alert('Message has been sent successfully');
+      setName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+    } catch (e) {
+      console.log(e);
+      alert("message wasn't sent")
+    }
+    
+   
   };
   return (
     <main className=" sm:px-[100px] sm:py-10 bg-[#111111] text-white box-border min-h-screen ">
