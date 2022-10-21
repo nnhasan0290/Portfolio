@@ -3,6 +3,7 @@ import graphcms from '../public/graphcms.jpg';
 import secondImg from '../public/Screenshot_2.jpg';
 import thirdImg from '../public/Screenshot_3.jpg';
 import tictac from "../public/tic.png";
+import basket from "../public/basketball.png";
 import BigHead from './BigHead';
 import SinglePortfolio from './SinglePortfolio';
 
@@ -36,7 +37,7 @@ export default function Portfolio() {
         <SinglePortfolio img={thirdImg} details={dashboard} link="https://nxt-shop.vercel.app/admin/dashboard" />
         <SinglePortfolio img={graphcms} details={cmsblog} link="https://cms-blog-six-opal.vercel.app" />
         <SinglePortfolio img={tictac} details={tictactoe} link="https://tic-tac-toe-pearl-mu.vercel.app" />
-        <SinglePortfolio img={tictac} details={basketball} link="https://basketball-prediction.vercel.app" />
+        <SinglePortfolio img={basket} details={basketball} link="https://basketball-prediction.vercel.app" />
       </div>
     </main>
   );
