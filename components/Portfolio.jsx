@@ -23,6 +23,10 @@ export default function Portfolio() {
     name: 'TIC TAC TOE',
     tech: 'Vanilla JavaScript, Vanilla Css',
   };
+  const basketball = {
+    name: 'Basketball Winner Prediction',
+    tech: 'React, LocalStorage, MUi'
+  }
 
   return (
     <main className=" sm:p-10 bg-[#111111] text-white box-border min-h-screen pb-10 ">
@@ -32,6 +36,7 @@ export default function Portfolio() {
         <SinglePortfolio img={thirdImg} details={dashboard} link="https://nxt-shop.vercel.app/admin/dashboard" />
         <SinglePortfolio img={graphcms} details={cmsblog} link="https://cms-blog-six-opal.vercel.app" />
         <SinglePortfolio img={tictac} details={tictactoe} link="https://tic-tac-toe-pearl-mu.vercel.app" />
+        <SinglePortfolio img={tictac} details={basketball} link="https://basketball-prediction.vercel.app" />
       </div>
     </main>
   );
