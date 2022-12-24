@@ -1,14 +1,13 @@
 import React from "react";
+import basket from "../public/basketball.png";
+import cs from "../public/cs.png";
 import secondImg from "../public/Screenshot_2.jpg";
 import thirdImg from "../public/Screenshot_3.jpg";
+import shadamonImg from "../public/shadamon.png";
+import Slider from "../public/slider.png";
 import tictac from "../public/tic.png";
-import basket from "../public/basketball.png";
 import BigHead from "./BigHead";
 import SinglePortfolio from "./SinglePortfolio";
-import Slider from "../public/slider.png";
-import cs from "../public/cs.png";
-import raghavImg from "../public/raghav.png";
-import shadamonImg from "../public/shadamon.png";
 
 export default function Portfolio() {
   const shopgrid = {
@@ -35,10 +34,6 @@ export default function Portfolio() {
     name: "Static Figma Design",
     tech: "Next js, Figma, bootstrap",
   };
-  const raghav = {
-    name: "Build Service",
-    tech: "React js, Figma, Scroll Behavior",
-  };
   const shadamon = {
     name: "Shadamon",
     tech: "Next js, Ant Design, Node js",
@@ -62,11 +57,6 @@ export default function Portfolio() {
           img={shadamonImg}
           details={shadamon}
           link="https://shadamon-three.vercel.app/"
-        />
-        <SinglePortfolio
-          img={raghavImg}
-          details={raghav}
-          link="https://atg-raghav.vercel.app/"
         />
         <SinglePortfolio
           img={Slider}
