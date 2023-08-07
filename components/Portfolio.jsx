@@ -1,11 +1,8 @@
 import React from "react";
-import basket from "../public/basketball.png";
-import cs from "../public/cs.png";
 import secondImg from "../public/Screenshot_2.jpg";
-import thirdImg from "../public/Screenshot_3.jpg";
+import cs from "../public/cs.png";
+import cvgenerator from "../public/cv.PNG";
 import shadamonImg from "../public/shadamon.png";
-import Slider from "../public/slider.png";
-import tictac from "../public/tic.png";
 import BigHead from "./BigHead";
 import SinglePortfolio from "./SinglePortfolio";
 
@@ -38,6 +35,10 @@ export default function Portfolio() {
     name: "Shadamon",
     tech: "Next js, Ant Design, Node js",
   };
+  const cvGen = {
+    name: "Cv Generator",
+    tech: "React js, Vite, Vanilla Css",
+  };
 
   return (
     <main className=" sm:p-10 bg-[#111111] text-white box-border min-h-screen pb-10 ">
@@ -59,24 +60,9 @@ export default function Portfolio() {
           link="https://shadamon-three.vercel.app/"
         />
         <SinglePortfolio
-          img={Slider}
-          details={fixedslider}
-          link="https://asignment-bn.vercel.app"
-        />
-        <SinglePortfolio
-          img={thirdImg}
-          details={dashboard}
-          link="https://nxt-shop.vercel.app/admin/dashboard"
-        />
-        <SinglePortfolio
-          img={tictac}
-          details={tictactoe}
-          link="https://tic-tac-toe-pearl-mu.vercel.app"
-        />
-        <SinglePortfolio
-          img={basket}
-          details={basketball}
-          link="https://basketball-prediction.vercel.app"
+          img={cvgenerator}
+          details={cvGen}
+          link="https://cv-generator-zeta.vercel.app/"
         />
       </div>
     </main>
