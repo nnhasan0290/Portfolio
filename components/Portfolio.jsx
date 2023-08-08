@@ -45,6 +45,11 @@ export default function Portfolio() {
       <BigHead main="PORTFOLIO" background="WORKS" />
       <div className="sm:flex flex-wrap justify-center sm:mx-[70px]">
         <SinglePortfolio
+          img={cvgenerator}
+          details={cvGen}
+          link="https://cv-generator-zeta.vercel.app/"
+        />
+        <SinglePortfolio
           img={secondImg}
           details={shopgrid}
           link="https://nxt-shop.vercel.app/product"
@@ -58,11 +63,6 @@ export default function Portfolio() {
           img={shadamonImg}
           details={shadamon}
           link="https://shadamon-three.vercel.app/"
-        />
-        <SinglePortfolio
-          img={cvgenerator}
-          details={cvGen}
-          link="https://cv-generator-zeta.vercel.app/"
         />
       </div>
     </main>
