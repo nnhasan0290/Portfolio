@@ -1,6 +1,7 @@
 import React from "react";
 import secondImg from "../public/Screenshot_2.jpg";
 import cs from "../public/cs.png";
+import csgImg from "../public/csg.PNG";
 import cvgenerator from "../public/cv.PNG";
 import shadamonImg from "../public/shadamon.png";
 import BigHead from "./BigHead";
@@ -37,8 +38,12 @@ export default function Portfolio() {
   };
   const cvGen = {
     name: "Cv Generator",
-    tech: "React js, Vite, Vanilla Css",
+    tech: "React js, Vite, Sass",
   };
+  const csg = {
+    name: "Color Shades Generator",
+    tech: "React Js, Sass, Vanilla Js"
+  }
 
   return (
     <main className=" sm:p-10 bg-[#111111] text-white box-border min-h-screen pb-10 ">
@@ -63,6 +68,11 @@ export default function Portfolio() {
           img={shadamonImg}
           details={shadamon}
           link="https://shadamon-three.vercel.app/"
+        />
+        <SinglePortfolio
+          img={csgImg}
+          details={csg}
+          link="https://color-shades-phwr.vercel.app/"
         />
       </div>
     </main>
