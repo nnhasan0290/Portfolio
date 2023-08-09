@@ -52,7 +52,7 @@ export default function Portfolio() {
         <SinglePortfolio
           img={cvgenerator}
           details={cvGen}
-          link="https://main--reliable-sprinkles-81e2e2.netlify.app/"
+          link="https://cv-generator-zeta.vercel.app/"
         />
         <SinglePortfolio
           img={secondImg}
