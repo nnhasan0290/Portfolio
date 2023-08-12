@@ -44,14 +44,14 @@ function AboutMe() {
             <p className="w-[50%] opacity-80 min-w-[200px]">
               City:
               {' '}
-              <strong>Kushtia</strong>
+              <strong>Dhaka</strong>
             </p>
           </div>
           <div className="flex flex-wrap items-center my-5">
             <p className="w-[50%] opacity-80 min-w-[200px]">
               Phone:
               {' '}
-              <strong>+8801521408381</strong>
+              <strong>+8801952582090</strong>
             </p>
             <p className="w-[50%] opacity-80 min-w-[200px]">
               Email:
@@ -94,7 +94,7 @@ function AboutMe() {
         <h1 className="py-5 text-center">
           MY SKILLS
         </h1>
-        <div className="flex flex-wrap justify-center items-center">
+        <div className="flex flex-wrap items-center justify-center">
           <CircularProgress value={80} text="HTML" />
           <CircularProgress value={90} text="CSS" />
           <CircularProgress value={85} text="TAILWIND" />
