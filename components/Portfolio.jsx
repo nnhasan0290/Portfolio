@@ -4,6 +4,7 @@ import cs from "../public/cs.png";
 import csgImg from "../public/csg.PNG";
 import cvgenerator from "../public/cv.PNG";
 import shadamonImg from "../public/shadamon.png";
+import SortGall from "../public/sortableGallery.PNG";
 import BigHead from "./BigHead";
 import SinglePortfolio from "./SinglePortfolio";
 
@@ -45,10 +46,20 @@ export default function Portfolio() {
     tech: "React Js, Sass, Vanilla Js"
   }
 
+  const SG = {
+    name: "Sortable Gallary",
+    tech: "React Js, Css"
+  }
+
   return (
     <main className=" sm:p-10 bg-[#111111] text-white box-border min-h-screen pb-10 ">
       <BigHead main="PORTFOLIO" background="WORKS" />
       <div className="sm:flex flex-wrap justify-center sm:mx-[70px]">
+        <SinglePortfolio
+          img={SortGall}
+          details={SG}
+          link="https://ollyo-gallary-task.vercel.app/"
+        />
         <SinglePortfolio
           img={cvgenerator}
           details={cvGen}
